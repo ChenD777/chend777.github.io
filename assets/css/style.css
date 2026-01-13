@@ -16,14 +16,10 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  font-family:var(--sans);
-  background:
-    radial-gradient(1200px 700px at 20% 0%, rgba(122,162,255,0.18), transparent 55%),
-    radial-gradient(900px 600px at 80% 15%, rgba(125,255,204,0.10), transparent 60%),
-    radial-gradient(900px 700px at 60% 120%, rgba(122,162,255,0.08), transparent 60%),
-    var(--bg);
-  color:var(--text);
-  line-height:1.6;
+  font-family: var(--sans);
+  background: #ffffff;      /* 白色背景 */
+  color: #222222;           /* 深灰文字 */
+  line-height: 1.6;
 }
 
 a{color:var(--accent);text-decoration:none}
