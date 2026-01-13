@@ -6,52 +6,102 @@
   <title>Research | Chen Dong</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
+
 <body>
-<div class="nav">
-  <div class="nav-inner">
-    <div class="brand"><span class="brand-dot"></span><span>Chen Dong</span></div>
-    <div class="nav-links">
-      <a class="" href="index.html">Home</a><a class="active" href="research.html">Research</a><a class="" href="publications.html">Publications</a><a class="" href="contact.html">Contact</a>
+
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Chen Dong</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="card">
-    <h2>Research</h2>
-    <p>
-      My research centers on <b>energy-efficient and safe operation of data center cooling systems</b>.
-      I develop physics-informed learning models and advanced control methods that work under realistic system
-      dynamics, uncertainties, and operational constraints.
-    </p>
 
-    <h3>Project 1: Physics-Informed Machine Learning Framework for Modeling (Aug 2022 – Jun 2024)</h3>
-    <ul>
-      <li>Proposed <b>APCNNs</b> with improved prediction accuracy and reduced computational cost compared to traditional PCNNs.</li>
-      <li>Reduced short-term (15-min) forecast MAE by ~20% and multi-day errors by ~80% on real-world data center datasets.</li>
-      <li>Established rigorous proofs to verify physical consistency across modeled processes.</li>
-    </ul>
+  <div class="container">
+    <div class="card">
 
-    <h3>Project 2: Physics-Informed ML-Based Model Predictive Control (Jun 2024 – Oct 2025)</h3>
-    <ul>
-      <li>Developed an <b>APCNN-assisted MPC</b> controller with ~20% cooling-energy reduction under normal and unseen high-load conditions.</li>
-      <li>Demonstrated consistently better energy efficiency with more accurate and stable temperature regulation than ML/time-series baselines.</li>
-      <li>Extended to <b>physics-informed adaptive MPC (PIML-AMPC)</b>, achieving ~24% annual cooling-energy savings vs fixed-setpoint control.</li>
-      <li>Improved deployment readiness by integrating learning-based prediction with physics-based knowledge for robust operation.</li>
-    </ul>
+      <h2>Research</h2>
 
-    <h3>Project 3: Deep Reinforcement Learning Control for Data Centers (Oct 2025 – Apr 2026)</h3>
-    <ul>
-      <li>Built an end-to-end DRL control platform for <b>hybrid-cooled data centers</b> with closed-loop training and evaluation.</li>
-      <li>Implemented and benchmarked <b>SAC, TD3, and PPO</b>, achieving ~15% energy savings while maintaining stable thermal performance.</li>
-      <li>Advanced <b>safe DRL</b> via constraint handling and violation monitoring to improve reliability under diverse conditions.</li>
-    </ul>
-  
+      <p>
+        My research centers on <b>energy-efficient and safe operation of data center cooling systems</b>.
+        I develop physics-informed learning models and advanced control methods that work under realistic system
+        dynamics, uncertainties, and operational constraints.
+      </p>
+
+      <h3>
+        Hybrid machine learning-based prediction and intelligent control of data center thermal environment
+        (Aug 2022 – Oct 2025)
+      </h3>
+
+      <ul>
+        <li>
+          Developed a <b>hybrid physics-informed machine learning framework</b> for data center thermal modeling,
+          introducing <b>Adaptive Physically Consistent Neural Networks (APCNNs)</b> that achieve higher predictive
+          accuracy with significantly reduced computational cost compared to conventional PCNNs.
+        </li>
+
+        <li>
+          Achieved ~20% lower MAE for short-term (15-minute) thermal forecasting and up to ~80% error reduction
+          over multi-day horizons on real-world data center operational datasets, while rigorously preserving
+          physical consistency through theoretical analysis.
+        </li>
+
+        <li>
+          Integrated APCNN-based prediction models into a
+          <b>physics-informed machine learning–assisted model predictive control (MPC)</b> framework,
+          enabling coordinated and adaptive optimization of data center cooling systems under both normal
+          operation and previously unseen high-load conditions.
+        </li>
+
+        <li>
+          Extended the control framework to a
+          <b>long-horizon physics-informed adaptive MPC (PIML-AMPC)</b>,
+          achieving approximately <b>20% cooling-energy reduction</b> in short-term evaluations and
+          <b>~24% annual energy savings</b> compared with fixed-setpoint control strategies.
+        </li>
+
+        <li>
+          Enhanced robustness and deployment readiness by tightly coupling learning-based prediction
+          with first-principles physical knowledge, ensuring stable temperature regulation and reliable
+          operation under realistic disturbances and operational variability.
+        </li>
+      </ul>
+
+      <h3>
+        Project 3: Deep reinforcement learning control for data centers
+        (Oct 2025 – Apr 2026)
+      </h3>
+
+      <ul>
+        <li>
+          Built an end-to-end DRL control platform for <b>hybrid-cooled data centers</b>
+          with closed-loop training and evaluation.
+        </li>
+        <li>
+          Implemented and benchmarked <b>SAC, TD3, and PPO</b>, achieving ~15% energy savings
+          while maintaining stable thermal performance.
+        </li>
+        <li>
+          Advanced <b>safe DRL</b> via constraint handling and violation monitoring to improve
+          reliability under diverse conditions.
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="footer">
+      <div>© 2026 Chen Dong. Built for GitHub Pages.</div>
+      <div class="small">Last updated: 2026-01-13</div>
+    </div>
+
   </div>
 
-  <div class="footer">
-  <div>© 2026 Chen Dong. Built for GitHub Pages.</div>
-  <div class="small">Last updated: 2026-01-13</div>
-</div>
-</div>
 </body>
 </html>
