@@ -73,11 +73,11 @@ a:hover{text-decoration:underline}
   .hero{grid-template-columns:1fr}
 }
 .card{
-  background:rgba(16,26,51,0.55);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  padding:22px;
+  background:transparent;  /* 去掉灰底 */
+  border:none;
+  border-radius:0;
+  box-shadow:none;
+  padding:0;
 }
 .kicker{
   font-family:var(--mono);
@@ -92,9 +92,12 @@ h1{margin:10px 0 10px;font-size:40px;line-height:1.15}
 }
 h2{margin:0 0 8px;font-size:24px}
 h3{margin:18px 0 6px;font-size:18px}
-p{margin:10px 0;color:rgba(234,240,255,0.92)}
+p{margin:10px 0;color:#222}
+li{margin:6px 0;color:#222}
+.small{font-size:14px;color:#555}
+.meta{color:#666}
+
 ul{margin:10px 0 0;padding-left:20px}
-li{margin:6px 0;color:rgba(234,240,255,0.92)}
 
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .badge{
@@ -127,10 +130,12 @@ li{margin:6px 0;color:rgba(234,240,255,0.92)}
   display:flex; gap:16px; align-items:center;
 }
 .avatar{
-  width:124px;height:124px;border-radius:22px;
+  width:140px;
+  height:140px;
+  border-radius:10px;   /* 少一点圆角 */
   object-fit:cover;
-  border:1px solid var(--border);
-  box-shadow:0 14px 30px rgba(0,0,0,0.35);
+  border:1px solid #ddd;
+  box-shadow:none;
 }
 .meta{
   color:var(--muted);
@@ -138,9 +143,7 @@ li{margin:6px 0;color:rgba(234,240,255,0.92)}
 }
 .section{
   margin-top:22px;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:18px;
+  display:block;
 }
 @media (max-width: 860px){
   .section{grid-template-columns:1fr}
