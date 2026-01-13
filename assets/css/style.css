@@ -30,7 +30,8 @@ a:hover{text-decoration:underline}
   position:sticky;
   top:0;
   z-index:10;
-  background: #e8f2ff;              /* 天蓝色 */
+  background: rgba(200, 225, 255, 0.85);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid #c7ddf7;
 }
 .nav-inner{
