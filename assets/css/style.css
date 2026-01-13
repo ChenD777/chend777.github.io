@@ -27,10 +27,11 @@ a:hover{text-decoration:underline}
 .container{max-width:var(--max);margin:0 auto;padding:28px 18px 60px}
 
 .nav{
-  position:sticky; top:0; z-index:10;
-  background: rgba(11,16,32,0.65);
-  backdrop-filter: blur(10px);
-  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:10;
+  background: #e8f2ff;              /* 天蓝色 */
+  border-bottom: 1px solid #c7ddf7;
 }
 .nav-inner{
   max-width:var(--max);
