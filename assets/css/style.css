@@ -1,0 +1,186 @@
+:root{
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #000000;
+  --accent: #1a4fd8;   /* link blue */
+  --sky: #e8f2ff;      /* sky-blue nav background */
+  --sky2: #c7ddf7;     /* sky border */
+  --max: 1040px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+
+body{
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:28px 18px 60px;
+}
+
+/* ===== Top navigation ===== */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background: var(--sky);
+  border-bottom: 1px solid var(--sky2);
+}
+
+.nav-inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  letter-spacing:0.2px;
+  color: var(--text);
+}
+
+.brand-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:#3fa9f5;
+}
+
+.nav-links{display:flex;gap:14px;flex-wrap:wrap}
+.nav-links a{
+  display:inline-block;
+  padding:8px 10px;
+  border-radius:12px;
+  color: var(--text);
+  border:1px solid transparent;
+}
+.nav-links a.active,
+.nav-links a:hover{
+  background: rgba(63,169,245,0.16);
+  border-color: #90bfff;
+  text-decoration:none;
+}
+
+/* ===== Typography ===== */
+.kicker{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:0.8px;
+  text-transform:uppercase;
+  color: var(--muted);
+}
+h1{margin:10px 0;font-size:40px;line-height:1.15;color:var(--text)}
+h2{margin:28px 0 10px;font-size:24px;color:var(--text)}
+h3{margin:18px 0 8px;font-size:18px;color:var(--text)}
+@media (max-width:480px){ h1{font-size:34px} }
+
+p{margin:10px 0;color:var(--text)}
+li{margin:6px 0;color:var(--text)}
+ul{margin:10px 0 0;padding-left:20px}
+.small{font-size:14px;color:var(--muted)}
+.meta{font-size:14px;color:var(--muted)}
+
+/* ===== Home header (avatar + intro) ===== */
+.profile{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+@media (max-width:720px){
+  .profile{flex-direction:column;align-items:flex-start}
+}
+
+.avatar{
+  width:140px;
+  height:140px;
+  border-radius:10px;
+  object-fit:cover;
+  border:1px solid #ddd;
+}
+
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--sky2);
+  background:#f5f9ff;
+  color:var(--text);
+  font-size:13px;
+}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid #90bfff;
+  background:#f0f6ff;
+  color:var(--text);
+  font-weight:600;
+}
+.btn:hover{background:#e3efff;text-decoration:none}
+.btn.primary{
+  background:#cfe6ff;   /* light sky-blue */
+  border-color:#90bfff;
+}
+
+/* ===== Page sections ===== */
+.hr{height:1px;background:#ddd;margin:18px 0}
+
+.pub{
+  margin:10px 0;
+  padding:12px 14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  background:#fafafa;
+}
+.pub .venue{color:var(--muted);font-size:13px}
+
+.notice{
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px dashed #c7ddf7;
+  background:#f5f9ff;
+  color:var(--text);
+  font-size:14px;
+}
+
+.footer{
+  margin-top:40px;
+  padding-top:16px;
+  border-top:1px solid #ddd;
+  color:var(--muted);
+  font-size:13px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:space-between;
+}
+
+/* Make sure any remaining template colors don't leak */
+.card{background:transparent;border:none;box-shadow:none;padding:0}
+.code{font-family:var(--mono);font-size:13px;color:var(--text)}
+
+.grid-1{display:grid;grid-template-columns:1fr;gap:12px}
